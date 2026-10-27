@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coding Club - Registration</title>
+
+    <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <h1>💻 Coding Club</h1>
+
+        <nav>
+            <a href="Coding Event.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="register.html">Register</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>Event Registration Form</h2>
+
+        <form>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <hr>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <hr>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <hr>
+
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="date" name="date">
+
+            <hr>
+
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <hr>
+
+            <p>Choose your year:</p>
+
+            <input type="radio" id="first" name="year" value="1st">
+            <label for="first">1st Year</label>
+
+            <input type="radio" id="second" name="year" value="2nd">
+            <label for="second">2nd Year</label>
+
+            <input type="radio" id="third" name="year" value="3rd">
+            <label for="third">3rd Year</label>
+
+            <hr>
+
+            <p>Choose your interests:</p>
+
+            <input type="checkbox" id="html" name="interest" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="python" name="interest" value="Python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" id="java" name="interest" value="Java">
+            <label for="java">Java</label>
+
+            <hr>
+
+            <label for="event">Choose Event:</label>
+
+            <select id="event" name="event">
+                <option value="">-- Select an Event --</option>
+                <option value="web">Web Development Workshop</option>
+                <option value="hackathon">Hackathon</option>
+                <option value="contest">Programming Contest</option>
+            </select>
+
+            <hr>
+
+            <label for="message">Why do you want to join?</label>
+
+            <br>
+
+            <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+            <hr>
+
+
+            <input type="submit" value="Register">
+
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Coding Club. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
