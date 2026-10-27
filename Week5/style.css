@@ -1,0 +1,224 @@
+/* CSS VARIABLES */
+
+:root {
+    --primary-color: #0d52e6;
+    --secondary-color: #1e293b;
+    --background-color: #f1f5f9;
+    --card-color: #ffffff;
+    --text-color: #334155;
+    --accent-color: #38bdf8;
+
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+}
+
+
+/* UNIVERSAL SELECTOR */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* BODY */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+/*  HEADINGS */
+
+h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: var(--spacing-small);
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-medium);
+}
+
+h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-small);
+}
+
+
+/* HEADER */
+
+header {
+    background-color: var(--secondary-color);
+    padding: var(--spacing-medium);
+    text-align: center;
+}
+
+
+/* NAVIGATION */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+
+/* ID SELECTON */
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#hero h2 {
+    color: white;
+    font-size: 32px;
+}
+
+#hero p {
+    font-size: 18px;
+}
+
+
+/* CLASS SELECTOR */
+
+.card {
+    background-color: var(--card-color);
+    padding: var(--spacing-large);
+    margin: var(--spacing-large) auto;
+    max-width: 900px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    margin-top: var(--spacing-medium);
+    padding: 12px 24px;
+
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+
+/* LIST */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/*FORM */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+
+/* Radio buttons and checkboxes */
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+
+/* Submit button */
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-medium);
+    margin-top: var(--spacing-large);
+}
