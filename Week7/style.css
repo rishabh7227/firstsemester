@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #7da5e4;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-right {
+    color: mediumaquamarine;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right a {
+    color:black;
+    text-decoration: none;
+}
+
+.nav-right button {
+    color: black;
+    padding: 10px 15px;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1 1 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
